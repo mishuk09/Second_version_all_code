@@ -1,4 +1,4 @@
-package array;
+package array.BinarySearch;
 
 public class BInarySearchByOrder {
     public static void main(String[] args) {
