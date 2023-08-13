@@ -1,4 +1,21 @@
+// import java.util.Scanner;
 
+// public class contactnumberSort {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String number = sc.nextLine();
+//         if (number.length() >= 5) {
+//             String lastDigit = number.substring(number.length() - 5);
+//             String convertDigit = new String(new char[5]).replace('\0', 'X');
+//             System.out.println(number);
+//             System.out.println(convertDigit);
+//         } else {
+//             System.out.println("Number is too small");
+//         }
+
+//     }
+
+// }
 
 import java.util.Scanner;
 
