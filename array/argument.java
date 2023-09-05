@@ -1,14 +1,31 @@
 package array;
 
 public class argument {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
+   // Linear Search in 2D arrays
+ 
+ 
+	public static void main(String[] args)
+	{
+		int arr[][] = { { 3, 12, 9 },
+						{ 5, 2, 89 },
+						{ 90, 45, 22 } };
+		int target = 89;
+		int ans[] = linearSearch(arr, target);
+		System.out.println("Element found at index: "
+						+ Arrays.toString(ans));
+	}
 
-        System.out.println("You entered the following " + args.length + " command line arguments:");
-
-        for (String arg : args) {
-            System.out.println(arg);
-        }
-    }
-
+	static int[] linearSearch(int[][] arr, int target)
+	{
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				if (arr[i][j] == target) {
+					return new int[] { i, j };
+				}
+			}
+		}
+		return new int[] { -1, -1 };
+	}
 }
+
+
